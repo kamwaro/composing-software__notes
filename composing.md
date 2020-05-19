@@ -36,8 +36,8 @@
 
 - The most important questions in software development are: 1. What is function composition? 2. What is object composition?
 
-- You cant avoid composition just because you are not aware of it. You still do it - but you do it badly. You write code with more bugs, and make it harder for other developers to understand.
-- We spend more time maintaining software than we do creating it form scratch.
+- You can't avoid composition just because you are not aware of it. You still do it - but you do it badly. You write code with more bugs, and make it harder for other developers to understand.
+- We spend more time maintaining software than we do creating it from scratch.
 - If you are a software developer, you compose functions and data structures every day, whether you know it or not.
 - You can do it consciously ( and better), or you can do it accidentally.
 - The process of software development is breaking down large problems into smaller problems, building components that solve those smaller problems, then composing those components together to form a complete application.
@@ -74,3 +74,26 @@
 
 
     wait(5000).then(() => 20).then(g).then(f).then(value => console.log(value)) // 42
+
+- Likewise, every time you chain array method calls you're composing functions.
+- If you're chaining, you're composing.
+- If you're passin return values into other functions, you're composing.
+- When you compose functions intentionally, you'll do it better.
+
+# 2. The way of the Functional Programmer.
+
+- Functional programming is a foundational pillar of Javascript.
+- Immutability is a foundational pillar of functional programming.
+- You cant fully understand programming without first understanding immutability.
+
+// Aside note: Frameworks ease the work of creation by removing hard choices.
+
+- Keep functions small. Do one thing at a time, and do it well.
+  -Plan for composition.
+- Write functions whose outputs will naturally work as inputs to many other functions.
+- Type-specific functions can't be reused for data of a different type.
+- Wise programmers lift functions to work on many data types, or wrap data to make it look like what the function is expecting.
+- Lists and items make great universal abstractions.
+- A program can be reasoned about and outcomes predicted only when data flows freely through pure functions.
+
+# Composable Software:
